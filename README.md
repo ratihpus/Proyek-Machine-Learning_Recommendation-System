@@ -101,3 +101,11 @@ Tahap eksplorasi penting untuk memahami variabel-variabel pada data serta korela
 Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami dataset secara baik dan detail.
 
 >## Data Preparation
+Tahap ini bertujuan untuk mempersiapkan data yang akan digunakan untuk proses training model. Di sini dilakukan penghapusan kolom yang tidak diperlukan, pembersihkan data missing value, dan melakukan pengecekan dan penghapusan data duplikat.
+
+- Menghapus kolom yang tidak diperlukan
+  Pada dataset tourism_with_id, data yang diperlukan hanya ada pada   kolom Place_Id, Place_Name, dan Category, jadi hapus yang lain.
+
+  Pada dataset tourism_rating, semua kolom diperlukan, jadi tidak ada kolom yang dihapus.
+- Mengecek Missing Value
+  Proses pengecekan data yang hilang atau missing value dilakukan pada masing-masing dataset tourism_with_id dan tourism_rating. Berdasarkan hasil pengecekan, ternyata tidak ada data yang hilang dari kedua dataset tersebut.
