@@ -14,7 +14,7 @@ Proyek ini penting untuk diselesaikan agar pelanggan/user mendapatkan rekomendas
 
 >## Data Understanding
 <p align="center">
-  <img src="https://github.com/adiputrasinaga-cmd/recommendation-system/blob/main/img/kaggle-dataset-preview.png?raw=true"/>
+  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/eef2ec7907eeb1a2b693eef3bdac21adfe579277/img/datasetinfo.PNG?raw=true"/>  
 </p>
 
 Dataset ini digunakan untuk keperluan studi/pendidikan dimana diharapkan dapat menghasilkan daftar restoran teratas sesuai dengan preferensi konsumen dan menemukan fitur signifikan. 
