@@ -82,10 +82,11 @@ Berikut adalah visualisasi dari dataset tourism_with_id:
   <p align="center">
   <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/sampel_dataplace.PNG? raw=true"/>  
   </p>
-tourism_rating terdiri dari 10000 baris dan 3 kolom sebagai berikut:
-* User_Id: identitas unik dari setiap pengguna.
-* Place_Id: identitas unik dari setiap tempat wisata.
-* Place_Ratings: penilaian atau rating yang diberikan oleh pengguna terhadap tempat wisata tertentu.
+tourism_rating terdiri dari 10000 baris dan 3 kolom sebagai berikut: 
+
+<br> - User_Id: identitas unik dari setiap pengguna.
+<br> - Place_Id: identitas unik dari setiap tempat wisata.
+<br> - Place_Ratings: penilaian atau rating yang diberikan oleh pengguna terhadap tempat wisata tertentu.
 
 Berikut adalah visualisasi dari dataset tourism_rating:
   
