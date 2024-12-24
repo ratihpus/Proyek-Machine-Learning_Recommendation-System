@@ -52,7 +52,7 @@ Pada proyek ini, kita hanya akan menggunakan file `tourism_with_id.csv` dan `tou
 
 Berikut adalah Exploratory Data Analysis (EDA) yang merupakan proses investigasi awal pada data untuk menganalisis karakteristik, menemukan pola, anomali, dan memeriksa asumsi pada data.
 
-- Place 
+# Place 
   <br> Informasi Dataset tourism_with_id
   <p align="center">
   <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/dataplace_info.PNG? raw=true"/>  
@@ -77,7 +77,7 @@ Berikut adalah visualisasi dari dataset tourism_with_id:
   <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/sampel_dataplace.PNG? raw=true"/>  
 </p>
 
-- Rating
+# Rating
   <br> Informasi Dataset tourism_rating
   <p align="center">
   <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/sampel_dataplace.PNG? raw=true"/>  
@@ -92,5 +92,11 @@ Berikut adalah visualisasi dari dataset tourism_with_id:
    <p align="center">
   <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/datarating_info.PNG? raw=true"/>  
   </p>
+
+>## Exploratory Data Analysis (EDA)
+
+Tahap eksplorasi penting untuk memahami variabel-variabel pada data serta korelasi antar variabel. Pemahaman terhadap variabel pada data dan korelasinya akan membantu kita dalam menentukan pendekatan atau algoritma yang cocok untuk data kita. Idealnya, kita melakukan eksplorasi data terhadap seluruh variabel.
+
+Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami dataset secara baik dan detail.
 
 >## Data Preparation
