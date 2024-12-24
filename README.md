@@ -53,8 +53,44 @@ Pada proyek ini, kita hanya akan menggunakan file `tourism_with_id.csv` dan `tou
 Berikut adalah Exploratory Data Analysis (EDA) yang merupakan proses investigasi awal pada data untuk menganalisis karakteristik, menemukan pola, anomali, dan memeriksa asumsi pada data.
 
 - Place 
-  Informasi Dataset tourism_with_id
+  <br> Informasi Dataset tourism_with_id
   <p align="center">
-  <img src="https://github.com/ratihpus/Proyek-Machine-      Learning_Recommendation-System/blob/eef2ec7907eeb1a2b693eef3bdac21adfe579277/img/datasetinfo.PNG?raw=true"/>  
+  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/dataplace_info.PNG? raw=true"/>  
   </p>
   
+tourism_with_id terdiri dari 437 baris dan 10 kolom sebagai berikut:
+
+- Place_Id: kolom yang menunjukkan id dari setiap tempat wisata.
+- Place_Name: kolom yang menunjukkan nama dari setiap tempat wisata.
+- Description: kolom yang menunjukkan deskripsi dari setiap tempat wisata.
+- Category: kolom yang menunjukkan kategori dari setiap tempat wisata.
+- City: kolom yang menunjukkan kota dimana tempat wisata tersebut berada.
+- Price: kolom yang menunjukkan harga tiket masuk ke tempat wisata tersebut.
+- Rating: kolom yang menunjukkan rating dari setiap tempat wisata.
+- Time_Minutes: kolom yang menunjukkan waktu yang diperlukan untuk mengunjungi tempat wisata tersebut.
+- Coordinate: kolom yang menunjukkan koordinat dari setiap tempat wisata.
+- Lat: kolom yang menunjukkan latitude dari setiap tempat wisata.
+- Long: kolom yang menunjukkan longitude dari setiap tempat wisata.
+
+Berikut adalah visualisasi dari dataset tourism_with_id:
+<p align="center">
+  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/sampel_dataplace.PNG? raw=true"/>  
+</p>
+
+- Rating
+  <br> Informasi Dataset tourism_rating
+  <p align="center">
+  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/sampel_dataplace.PNG? raw=true"/>  
+  </p>
+  tourism_rating terdiri dari 10000 baris dan 3 kolom sebagai berikut:
+  - User_Id: identitas unik dari setiap pengguna.
+  - Place_Id: identitas unik dari setiap tempat wisata.
+  - Place_Ratings: penilaian atau rating yang diberikan oleh pengguna terhadap tempat wisata tertentu.
+
+  Berikut adalah visualisasi dari dataset tourism_rating:
+  
+   <p align="center">
+  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/datarating_info.PNG? raw=true"/>  
+  </p>
+
+>## Data Preparation
