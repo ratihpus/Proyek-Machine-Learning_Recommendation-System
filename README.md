@@ -116,8 +116,9 @@ Tahap ini bertujuan untuk mempersiapkan data yang akan digunakan untuk proses tr
 
 Pada tahap pengembangan model machine learning sistem rekomendasi, teknik content-based filtering recommendation dan collaborative filtering recommendation digunakan untuk memberikan rekomendasi tempat terbaik kepada pengguna berdasarkan rating atau penilaian yang telah mereka berikan pada tempat tersebut. Tujuannya adalah untuk memberikan hasil rekomendasi yang tepat sesuai dengan keinginan pengguna.
 
-- 1. Content-based Filtering Recommendation
+-1. Content-based Filtering Recommendation
 Beberapa tahap yang dilakukan untuk membuat sistem rekomendasi dengan pendekatan content-based filtering adalah TF-IDF Vectorizer, cosine similarity, dan pengujian sistem rekomendasi.
+
 * TF-IDF Vectorizer
   TF-IDF Vectorizer akan melakukan transformasi teks nama tempat menjadi bentuk angka berupa matriks.
 * Cosine Similarity
@@ -157,50 +158,71 @@ Selanjutnya, sistem akan menampilkan 10 daftar tempat yang direkomendasikan berd
    Harga Tiket Masuk: 15000
    Rating Wisata: 4.4
 
-Desa Wisata Lembah Kalipancur : Taman Hiburan
+3. Desa Wisata Lembah Kalipancur : Taman Hiburan
+   Harga Tiket Masuk: 0
+   Rating Wisata: 3.9
 
-Harga Tiket Masuk: 0
+4. Hutan Wisata Tinjomoyo Semarang : Cagar Alam
+   Harga Tiket Masuk: 3000
+   Rating Wisata: 4.3
 
-Rating Wisata: 3.9
+5. Indonesia Kaya Park : Taman Hiburan
+   Harga Tiket Masuk: 0
+   Rating Wisata: 4.6
 
-Hutan Wisata Tinjomoyo Semarang : Cagar Alam
+6. Pantai Cipta : Bahari
+   Harga Tiket Masuk: 5000
+   Rating Wisata: 4.0
 
-Harga Tiket Masuk: 3000
+7. Old City 3D Trick Art Museum : Budaya
+   Harga Tiket Masuk: 50000
+   Rating Wisata: 4.4
 
-Rating Wisata: 4.3
+8. Taman Srigunting : Taman Hiburan
+   Harga Tiket Masuk: 0
+   Rating Wisata: 4.7
 
-Indonesia Kaya Park : Taman Hiburan
+9. Wisata Alam Wana Wisata Penggaron : Cagar Alam
+   Harga Tiket Masuk: 10000
+   Rating Wisata: 4.1
 
-Harga Tiket Masuk: 0
+10. Masjid Kapal Semarang : Tempat Ibadah
+    Harga Tiket Masuk: 0
+    Rating Wisata: 4.1
 
-Rating Wisata: 4.6
+## Evaluasi
 
-Pantai Cipta : Bahari
+1. **Content-based Filtering Recommendation**
 
-Harga Tiket Masuk: 5000
+   Tahap evaluasi untuk sistem rekomendasi dengan _content-based filtering_ dapat menggunakan metrik _precision_.
 
-Rating Wisata: 4.0
+   $$precision = \frac{TP}{TP + FP}$$
 
-Old City 3D Trick Art Museum : Budaya
+   Di mana:
+   $TP =$ _True Positive_; rekomendasi yang sesuai
+   $FP =$ _False Positive_; rekomendasi yang tidak sesuai
 
-Harga Tiket Masuk: 50000
+   Berdasarkan hasil rekomendasi tempat wisata dengan pendekatan _content-based filtering_ dapat dilihat bahwa hasil yang diberikan oleh sistem rekomendasi berdasarkan tempat wisata **Tugu Muda Semarang** dengan kategori **Budaya**, menghasilkan 5 rekomendasi judul tempat wisata yang tepat. Tetapi secara keseluruhan sistem merekomendasikan tempat wisata dengan tepat.
 
-Rating Wisata: 4.4
+   $$precision = \frac{5}{5 + 0} = 100\%$$
 
-Taman Srigunting : Taman Hiburan
+   Dengan begitu, diperoleh nilai _precision_ sebesar **100%**.
 
-Harga Tiket Masuk: 0
+2. **Collaborative Filtering Recommendation**
 
-Rating Wisata: 4.7
+   Tahap evaluasi untuk sistem rekomendasi dengan _collaborative filtering_ menggunakan metrik RMSE (Root Mean Squared Error). Rumus untuk mencari nilai RMSE sebagai berikut,
 
-Wisata Alam Wana Wisata Penggaron : Cagar Alam
+   $$RMSE=\sqrt{\sum^{n}_{i=1} \frac{y_i - y\\_pred_i}{n}}$$
 
-Harga Tiket Masuk: 10000
+   Di mana:
+   $n =$ jumlah _dataset_
+   $i =$ urutan data dalam _dataset_
+   $y_i =$ nilai yang sebenarnya
+   $y_{pred} =$ nilai prediksi terhadap $i$
 
-Rating Wisata: 4.1
+   Nilai RMSE dari sistem rekomendasi dengan pendekatan _collaborative filtering_ adalah 0.3437 pada _Training RMSE_, dan 0.3695 pada _Validation RMSE_. Sedangkan untuk nilai _training loss_ sebesar 0.6909, dan _validation loss_ sebesar 0.7109.
 
-Masjid Kapal Semarang : Tempat Ibadah
+## Kesimpulan
 
-Harga Tiket Masuk: 0
+Dengan begitu, dapat disimpulkan bahwa sistem berhasil melakukan rekomendasi baik dengan pendekatan _content-based filtering_ maupun _collaborative filtering_. _Collaborative filtering_ membutuhkan data penilaian tempat dari pengguna, sedangkan pada _content-based filtering_, data rating tidak dibutuhkan karena sistem akan merekomendasikan berdasarkan konten tempat tersebut, yaitu kategori.
 
-Rating Wisata: 4.1
