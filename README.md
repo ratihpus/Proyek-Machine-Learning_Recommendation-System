@@ -104,8 +104,103 @@ Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami da
 Tahap ini bertujuan untuk mempersiapkan data yang akan digunakan untuk proses training model. Di sini dilakukan penghapusan kolom yang tidak diperlukan, pembersihkan data missing value, dan melakukan pengecekan dan penghapusan data duplikat.
 
 - Menghapus kolom yang tidak diperlukan
+  <br>
   Pada dataset tourism_with_id, data yang diperlukan hanya ada pada   kolom Place_Id, Place_Name, dan Category, jadi hapus yang lain.
 
   Pada dataset tourism_rating, semua kolom diperlukan, jadi tidak ada kolom yang dihapus.
 - Mengecek Missing Value
+  <br>
   Proses pengecekan data yang hilang atau missing value dilakukan pada masing-masing dataset tourism_with_id dan tourism_rating. Berdasarkan hasil pengecekan, ternyata tidak ada data yang hilang dari kedua dataset tersebut.
+
+>## Modelling
+
+Pada tahap pengembangan model machine learning sistem rekomendasi, teknik content-based filtering recommendation dan collaborative filtering recommendation digunakan untuk memberikan rekomendasi tempat terbaik kepada pengguna berdasarkan rating atau penilaian yang telah mereka berikan pada tempat tersebut. Tujuannya adalah untuk memberikan hasil rekomendasi yang tepat sesuai dengan keinginan pengguna.
+
+- 1. Content-based Filtering Recommendation
+Beberapa tahap yang dilakukan untuk membuat sistem rekomendasi dengan pendekatan content-based filtering adalah TF-IDF Vectorizer, cosine similarity, dan pengujian sistem rekomendasi.
+* TF-IDF Vectorizer
+  TF-IDF Vectorizer akan melakukan transformasi teks nama tempat menjadi bentuk angka berupa matriks.
+* Cosine Similarity
+  Cosine similarity digunakan untuk menghitung tingkat kesamaan antara dua data place dengan mengukur sudut antara kedua data tersebut. Teknik ini menghitung tingkat kesamaan dengan menggunakan sudut antara data place yang dianalisis. Hasil perhitungan ini akan memberikan nilai yang menunjukkan tingkat kesamaan antara dua data place, dimana nilai yang mendekati 1 menunjukkan tingkat kesamaan yang tinggi, dan nilai yang mendekati 0 menunjukkan tingkat kesamaan yang rendah.
+* Hasil Top-N Recommendation
+  Setelah data tempat wisata dikonversi menjadi matriks dengan menggunakan TF-IDF Vectorizer, dan tingkat kesamaan antar nama tempat ditentukan dengan menggunakan cosine similarity, selanjutnya dilakukan pengujian terhadap sistem rekomendasi yang menggunakan pendekatan content-based filtering recommendation.
+
+-2. Collaborative Filtering Recommendation
+Tahap-tahap yang dilakukan untuk membuat sistem rekomendasi dengan pendekatan collaborative filtering meliputi data preparation, pembagian data menjadi data latih dan data validasi, serta pembangunan model dan pengujian sistem rekomendasi.
+
+* Data Preparation
+
+Tahap data preparation dilakukan dengan proses encoding fitur User_Id pada dataset ratings dan fitur Place_Id pada dataset ratings menjadi sebuah array. Lalu hasil encoding tersebut akan dilakukan pemetaan atau mapping fitur yang telah dilakukan encoding tersebut ke dalam dataset ratings. Berdasarkan hasil encoding dan mapping tersebut, diperoleh jumlah user sebesar 297, jumlah tempat sebesar 57, nilai rating minimal sebesar 1.0, dan nilai rating maksimal yaitu 5.0
+
+* Membagi Data Latih dan Data Validasi
+
+Tahap pembagian dataset diawali dengan mengacak dataset ratings, kemudian melakukan pembagian menjadi data latih dan data validasi, yaitu dengan rasio data latih banding data validasi sebesar 80:20.
+
+* Model Development dan Hasil Rekomendasi
+
+Dari model machine learning yang telah dibangun menggunakan layer embedding dan regularizer, serta adam optimizer, binary crossentropy loss function, dan metrik RMSE (Root Mean Squared Error), diperoleh hasil pengujian sistem rekomendasi tempat wisata dengan pendekatan collaborative filtering.
+
+Berdasarkan hasil rekomendasi tempat di atas, dapat dilihat bahwa sistem rekomendasi mengambil pengguna acak (208), lalu dilakukan pencarian tempat dengan rating terbaik dari user tersebut.
+
+- Water Blaster Bukit Candi Golf: Taman Hiburan
+- La Kana Chapel: Taman Hiburan
+- Masjid Agung Ungaran: Tempat Ibadah
+- Air Terjun Semirang: Cagar Alam
+
+Selanjutnya, sistem akan menampilkan 10 daftar tempat yang direkomendasikan berdasarkan kategori yang dimiliki terhadap data pengguna acak tadi. Dapat dilihat bahwa sistem merekomendasikan beberapa tempat dengan kategori yang sama, seperti
+
+1. Candi Gedong Songo : Budaya
+   Harga Tiket Masuk: 10000
+   Rating Wisata: 4.5
+
+2. Grand Maerakaca : Taman Hiburan
+   Harga Tiket Masuk: 15000
+   Rating Wisata: 4.4
+
+Desa Wisata Lembah Kalipancur : Taman Hiburan
+
+Harga Tiket Masuk: 0
+
+Rating Wisata: 3.9
+
+Hutan Wisata Tinjomoyo Semarang : Cagar Alam
+
+Harga Tiket Masuk: 3000
+
+Rating Wisata: 4.3
+
+Indonesia Kaya Park : Taman Hiburan
+
+Harga Tiket Masuk: 0
+
+Rating Wisata: 4.6
+
+Pantai Cipta : Bahari
+
+Harga Tiket Masuk: 5000
+
+Rating Wisata: 4.0
+
+Old City 3D Trick Art Museum : Budaya
+
+Harga Tiket Masuk: 50000
+
+Rating Wisata: 4.4
+
+Taman Srigunting : Taman Hiburan
+
+Harga Tiket Masuk: 0
+
+Rating Wisata: 4.7
+
+Wisata Alam Wana Wisata Penggaron : Cagar Alam
+
+Harga Tiket Masuk: 10000
+
+Rating Wisata: 4.1
+
+Masjid Kapal Semarang : Tempat Ibadah
+
+Harga Tiket Masuk: 0
+
+Rating Wisata: 4.1
