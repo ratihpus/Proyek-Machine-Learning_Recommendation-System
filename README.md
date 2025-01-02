@@ -145,6 +145,15 @@ Tahap ini bertujuan untuk mempersiapkan data yang akan digunakan untuk proses tr
   <br>
   Proses pengecekan data yang hilang atau missing value dilakukan pada masing-masing dataset tourism_with_id dan tourism_rating. Berdasarkan hasil pengecekan, ternyata tidak ada data yang hilang dari kedua dataset tersebut.
 
+  Tahapan pada Data Preparation :
+  1. Filter data : proses untuk menyaring subset data dari DataFrame berdasarkan suatu kondisi atau kriteria tertentu. Proses ini berguna untuk memfokuskan analisis pada data yang relevan atau memenuhi syarat tertentu.
+  2. Merge data : menggabungkan dua DataFrame berdasarkan kolom yang sama atau kunci yang umum
+  3. Handling missing value : proses menangani data yang hilang atau kosong (missing data) dalam dataset.
+  4. Content Based Filtering Preparation : Ekstrasi fitur TF-IDF : TF-IDF Vectorizer digunakan untuk menemukan representasi fitur yang penting dari setiap kategori destinasi wisata. Alat ini dari library scikit-learn akan mengubah nilai-nilai tersebut menjadi vektor dengan menggunakan metode fit_transform dan transform, serta melakukan pemecahan data menjadi bagian-bagian yang lebih kecil secara langsung.
+  5. Collaborative Filtering Preparation : teknik rekomendasi yang memanfaatkan interaksi pengguna dengan item (misalnya, rating yang diberikan pengguna terhadap produk atau tempat).
+     Encode label : encoding label berarti mengubah kategori atau string menjadi angka yang dapat digunakan oleh model. 
+     Split data : data harus dibagi menjadi training set dan test set. Umumnya, 80% data digunakan untuk pelatihan, dan 20% sisanya untuk pengujian.
+
 >## Modelling
 
 Pada tahap pengembangan model machine learning sistem rekomendasi, teknik content-based filtering recommendation dan collaborative filtering recommendation digunakan untuk memberikan rekomendasi tempat terbaik kepada pengguna berdasarkan rating atau penilaian yang telah mereka berikan pada tempat tersebut. Tujuannya adalah untuk memberikan hasil rekomendasi yang tepat sesuai dengan keinginan pengguna.
@@ -172,7 +181,22 @@ Tahap pembagian dataset diawali dengan mengacak dataset ratings, kemudian melaku
 
 * Model Development dan Hasil Rekomendasi
 
-Dari model machine learning yang telah dibangun menggunakan layer embedding dan regularizer, serta adam optimizer, binary crossentropy loss function, dan metrik RMSE (Root Mean Squared Error), diperoleh hasil pengujian sistem rekomendasi tempat wisata dengan pendekatan collaborative filtering.
+Dari model machine learning yang telah dibangun menggunakan layer embedding dan regularizer, serta adam optimizer, binary crossentropy loss function, dan metrik RMSE (Root Mean Squared Error), diperoleh hasil pengujian sistem rekomendasi tempat wisata dengan pendekatan collaborative filtering. 
+
+Melakukan pendefinisian kelas RecommenderNet untuk membangun model klasifikasi teks tersebut. Model ini akan memberikan rekomendasi kepada pengguna berdasarkan preferensi atau kecenderungan pengguna di masa lalu. Model ini dapat digunakan dalam berbagai bidang, seperti rekomendasi film, musik, produk, dan lain-lain. RecommenderNet menggunakan algoritma pembelajaran mesin seperti collaborative filtering atau content-based filtering untuk menentukan rekomendasi yang tepat untuk pengguna.
+
+Parameter yang digunakan dalam model ini adalah:
+
+1. users_count: jumlah user yang akan jadi input dimension pada user embedding, tepatnya sebagai jumlah elemen dari vocabulary atau kata-kata yang digunakan dalam input data
+2. place_count: jumlah tempat yang akan jadi input dimension pada tempat embedding, tepatnya sebagai jumlah elemen dari vocabulary atau kata-kata yang digunakan dalam input data
+3. embedding_size: ukuran embedding akan jadi output dimension pada user embedding dan tempat embedding, yaitu jumlah fitur yang dihasilkan oleh Embedding layer, yang merupakan hasil pengurangan dimensi dari input data.
+Embedding layer ini akan mengubah representasi numerik dari input data menjadi representasi vektor yang lebih bermakna dan dapat dipahami oleh model machine learning.
+
+Proses kompilasi atau compile dengan:
+
+1. binary crossentropy loss function: loss function untuk menghitung loss pada model klasifikasi biner.
+2. adam optimizer: algoritma optimisasi yang digunakan untuk mengupdate bobot pada model machine learning secara efisien.
+3. metrik RMSE (Root Mean Square Error): metrik yang digunakan untuk mengukur seberapa jauh hasil prediksi dari model dari nilai aktual. RMSE dihitung dengan mencari rata-rata dari kuadrat error yang diakumulasikan dari seluruh data.
 
 Berdasarkan hasil rekomendasi tempat di atas, dapat dilihat bahwa sistem rekomendasi mengambil pengguna acak (208), lalu dilakukan pencarian tempat dengan rating terbaik dari user tersebut.
 
