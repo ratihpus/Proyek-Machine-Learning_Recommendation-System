@@ -115,16 +115,16 @@ Tahap eksplorasi penting untuk memahami variabel-variabel pada data serta korela
 
 Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami dataset secara baik dan detail.
 
-Tahapan pada proses ini yaitu :
-1. Menampilkan informasi terkait tempat yang paling sering dirating
-2. Menampilkan visualisasi data distribusi rating
-3. Menampilkan visualisasi perbandingan jumlah kategori wisata di Kota Semarang
-4. Menampilkan visualisasi distribusi usia pengunjung (user)
-5. Membuat visualisasi distribusi harga masuk tempat wisata
-6. Menggabungkan Harga dan Waktu_Menit untuk tujuan Kategori
-7. Memfilter asal kota dari user
-8. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom User_Id pada DataFrame user
-9. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom Place_Id pada DataFrame rating
+  Tahapan pada proses ini yaitu :
+  1. Menampilkan informasi terkait tempat yang paling sering dirating
+  2. Menampilkan visualisasi data distribusi rating
+  3. Menampilkan visualisasi perbandingan jumlah kategori wisata di Kota Semarang
+  4. Menampilkan visualisasi distribusi usia pengunjung (user)
+  5. Membuat visualisasi distribusi harga masuk tempat wisata
+  6. Menggabungkan Harga dan Waktu_Menit untuk tujuan Kategori
+  7. Memfilter asal kota dari user
+  8. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom User_Id pada DataFrame user
+  9. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom Place_Id pada DataFrame rating
 
 Setelah melakukan Exploratory Data Analysis (EDA), kita memperoleh hasil:
 
