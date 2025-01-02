@@ -97,11 +97,41 @@ Berikut adalah visualisasi dari dataset tourism_rating:
   <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/datarating_info.PNG? raw=true"/>  
   </p>
 
+>## Kondisi Data
+
+Tahap ini merupakan tahapan pembersihan data 
+1. Menghapus kolom yang tidak diperlukan yaitu kolom Unnamed: 11 dan Unnamed: 12
+2. Mengatasi missing values pada in package_tourism hasilnya bahwa tidak ada missing value pada dataset tersebut
+3. Mengecek duplikasi pada setiap dataset yaitu jumlah data places yang duplikat: 0 sedangkan jumlah data rating yang duplikat: 6
+4. Membuat kamus (dictionary) yang dapat digunakan untuk encoding dan decoding nilai-nilai dalam suatu kolom pada DataFrame
+5. Melakukan encoding kolom User_Id dan memetakan hasil encoding tersebut ke dalam DataFrame
+6. Melakukan encoding kolom Place_Id dan memetakan hasil encoding tersebut ke DataFrame
+7. Melihat gambaran data untuk pemodelan dengan tujuan untuk mendapatkan statistik dasar dari dataset, termasuk jumlah pengguna, jumlah tempat, dan rentang nilai rating
+8. Melakukan pengacakan urutan baris dalam DataFrame, dengan tujuan menghindari bias urutan data, meningkatkan generalisasi model, mempersiapkan data untuk split
+   
 >## Exploratory Data Analysis (EDA)
 
 Tahap eksplorasi penting untuk memahami variabel-variabel pada data serta korelasi antar variabel. Pemahaman terhadap variabel pada data dan korelasinya akan membantu kita dalam menentukan pendekatan atau algoritma yang cocok untuk data kita. Idealnya, kita melakukan eksplorasi data terhadap seluruh variabel.
 
 Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami dataset secara baik dan detail.
+
+Tahapan pada proses ini yaitu :
+1. Menampilkan informasi terkait tempat yang paling sering dirating
+2. Menampilkan visualisasi data distribusi rating
+3. Menampilkan visualisasi perbandingan jumlah kategori wisata di Kota Semarang
+4. Menampilkan visualisasi distribusi usia pengunjung (user)
+5. Membuat visualisasi distribusi harga masuk tempat wisata
+6. Menggabungkan Harga dan Waktu_Menit untuk tujuan Kategori
+7. Memfilter asal kota dari user
+8. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom User_Id pada DataFrame user
+9. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom Place_Id pada DataFrame rating
+
+Setelah melakukan Exploratory Data Analysis (EDA), kita memperoleh hasil:
+
+* Semua (33) tempat yang paling sering dirating
+* Semua (297) pengguna telah memberi peringkat minimal 1 kali
+  
+Untuk merekomendasikan tempat wisata dengan preferensi teratas, kita dapat meminta setiap pengguna memberi peringkat terhadap semua tempat wisata. Namun tentunya hal tersebut sedikit sulit dicapai. Solusinya kita akan mencoba memprediksi peringkat yang akan diberikan pengguna terhadap tempat wisata.
 
 >## Data Preparation
 Tahap ini bertujuan untuk mempersiapkan data yang akan digunakan untuk proses training model. Di sini dilakukan penghapusan kolom yang tidak diperlukan, pembersihkan data missing value, dan melakukan pengecekan dan penghapusan data duplikat.
