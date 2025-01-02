@@ -41,6 +41,7 @@ Untuk menyelesaikan masalah yang telah disebutkan pada bagian `Problem Statement
 </p>
 
 Dataset ini digunakan untuk keperluan studi/pendidikan dimana diharapkan dapat menghasilkan daftar restoran teratas sesuai dengan preferensi konsumen dan menemukan fitur signifikan. 
+
 Dataset diperoleh dari [Kaggle](https://www.kaggle.com/). ***Kaggle*** merupakan platform penyedia dataset untuk data science. Untuk proyek ini, dataset yang kita pakai yaitu:
 [Recommend top restaurants based on preference](https://www.kaggle.com/datasets/aprabowo/indonesia-tourism-destination)
 
@@ -58,7 +59,9 @@ Berikut adalah Exploratory Data Analysis (EDA) yang merupakan proses investigasi
   <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/dataplace_info.PNG? raw=true"/>  
   </p>
   
-tourism_with_id terdiri dari 437 baris dan 10 kolom sebagai berikut:
+Jumlah data pada dataset tersebut yaitu jumlah place sebanyak 437 sedangkan jumlah rating sebanyak 10000. 
+
+Pada tourism_with_id terdiri dari 437 baris dan 10 kolom sebagai berikut:
 
 - Place_Id: kolom yang menunjukkan id dari setiap tempat wisata.
 - Place_Name: kolom yang menunjukkan nama dari setiap tempat wisata.
