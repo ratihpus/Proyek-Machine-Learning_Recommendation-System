@@ -56,7 +56,7 @@ Berikut adalah Exploratory Data Analysis (EDA) yang merupakan proses investigasi
 ### Place 
   <br> Informasi Dataset tourism_with_id
   <p align="center">
-  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/dataplace_info.PNG? raw=true"/>  
+  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/dataplace_info.PNG?raw=true"/>  
   </p>
   
 Jumlah data pada dataset tersebut yaitu jumlah place sebanyak 437 sedangkan jumlah rating sebanyak 10000. 
@@ -77,13 +77,13 @@ Pada tourism_with_id terdiri dari 437 baris dan 10 kolom sebagai berikut:
 
 Berikut adalah visualisasi dari dataset tourism_with_id:
 <p align="center">
-  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/sampel_dataplace.PNG? raw=true"/>  
+  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/sampel_dataplace.PNG?raw=true"/>  
 </p>
 
 ### Rating
   <br> Informasi Dataset tourism_rating
   <p align="center">
-  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/sampel_dataplace.PNG? raw=true"/>  
+  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/sampel_dataplace.PNG?raw=true"/>  
   </p>
 tourism_rating terdiri dari 10000 baris dan 3 kolom sebagai berikut: 
 
@@ -94,7 +94,7 @@ tourism_rating terdiri dari 10000 baris dan 3 kolom sebagai berikut:
 Berikut adalah visualisasi dari dataset tourism_rating:
   
    <p align="center">
-  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/datarating_info.PNG? raw=true"/>  
+  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/datarating_info.PNG?raw=true"/>  
   </p>
 
 >## Kondisi Data
