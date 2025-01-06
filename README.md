@@ -43,7 +43,7 @@ Untuk menyelesaikan masalah yang telah disebutkan pada bagian `Problem Statement
 Dataset ini digunakan untuk keperluan studi/pendidikan dimana diharapkan dapat menghasilkan daftar restoran teratas sesuai dengan preferensi konsumen dan menemukan fitur signifikan. 
 
 Dataset diperoleh dari [Kaggle](https://www.kaggle.com/). ***Kaggle*** merupakan platform penyedia dataset untuk data science. Untuk proyek ini, dataset yang kita pakai yaitu:
-[Recommend top restaurants based on preference](https://www.kaggle.com/datasets/aprabowo/indonesia-tourism-destination)
+[Recommend top Tourism Destination based on preference](https://www.kaggle.com/datasets/aprabowo/indonesia-tourism-destination)
 
 Pada proyek ini, kita hanya akan menggunakan file `tourism_with_id.csv` dan `tourism_rating.csv` sebagai dataset yang akan digunakan. 
 
