@@ -128,18 +128,27 @@ Setelah melakukan Exploratory Data Analysis (EDA), kita memperoleh hasil:
 Untuk merekomendasikan tempat wisata dengan preferensi teratas, kita dapat meminta setiap pengguna memberi peringkat terhadap semua tempat wisata. Namun tentunya hal tersebut sedikit sulit dicapai. Solusinya kita akan mencoba memprediksi peringkat yang akan diberikan pengguna terhadap tempat wisata.
 
 >## Data Preparation
-Tahap ini bertujuan untuk mempersiapkan data yang akan digunakan untuk proses training model. Di sini dilakukan penghapusan kolom yang tidak diperlukan, pembersihkan data missing value, dan melakukan pengecekan dan penghapusan data duplikat.
+Tahap ini bertujuan untuk mempersiapkan data yang akan digunakan untuk proses training model. Di sini dilakukan dengan langkah berikut :
 
-- Menghapus kolom yang tidak diperlukan
+- Menghapus kolom yang tidak diperlukan 
   <br>
-  Pada dataset tourism_with_id, data yang diperlukan hanya ada pada   kolom Place_Id, Place_Name, dan Category, jadi hapus yang lain.
+  Menghapus kolom Unnamed: 11 dan Unnamed: 12, selain itu pada dataset tourism_with_id, data yang diperlukan hanya ada pada   kolom Place_Id, Place_Name, dan Category, jadi hapus yang lain.
 
   Pada dataset tourism_rating, semua kolom diperlukan, jadi tidak ada kolom yang dihapus.
+  
 - Mengecek Missing Value
   <br>
   Proses pengecekan data yang hilang atau missing value dilakukan pada masing-masing dataset tourism_with_id dan tourism_rating. Berdasarkan hasil pengecekan, ternyata tidak ada data yang hilang dari kedua dataset tersebut.
 
-  Tahapan pada Data Preparation :
+- Membuat kamus (dictionary) yang dapat digunakan untuk encoding dan decoding nilai-nilai dalam suatu kolom pada DataFrame.
+  
+- Melakukan encoding kolom user_id dan memetakan hasil encoding tersebut ke dalam DataFrame.
+  
+- Melakukan encoding kolom Place_id dan memetakan hasil encoding tersebut ke DataFrame.
+
+- Melakukan pengacakan urutan baris dalam DataFrame, dengan tujuan menghindari bias urutan data, meningkatkan generalisasi model, mempersiapkan data untuk split.
+  
+Tahapan pada Data Preparation :
   1. Filter data : proses untuk menyaring subset data dari DataFrame berdasarkan suatu kondisi atau kriteria tertentu. Proses ini berguna untuk memfokuskan analisis pada data yang relevan atau memenuhi syarat tertentu.
   2. Merge data : menggabungkan dua DataFrame berdasarkan kolom yang sama atau kunci yang umum
   3. Handling missing value : proses menangani data yang hilang atau kosong (missing data) dalam dataset.
@@ -157,8 +166,10 @@ Beberapa tahap yang dilakukan untuk membuat sistem rekomendasi dengan pendekatan
 
 * TF-IDF Vectorizer
   TF-IDF Vectorizer akan melakukan transformasi teks nama tempat menjadi bentuk angka berupa matriks.
+  
 * Cosine Similarity
   Cosine similarity digunakan untuk menghitung tingkat kesamaan antara dua data place dengan mengukur sudut antara kedua data tersebut. Teknik ini menghitung tingkat kesamaan dengan menggunakan sudut antara data place yang dianalisis. Hasil perhitungan ini akan memberikan nilai yang menunjukkan tingkat kesamaan antara dua data place, dimana nilai yang mendekati 1 menunjukkan tingkat kesamaan yang tinggi, dan nilai yang mendekati 0 menunjukkan tingkat kesamaan yang rendah.
+  
 * Hasil Top-N Recommendation
   Setelah data tempat wisata dikonversi menjadi matriks dengan menggunakan TF-IDF Vectorizer, dan tingkat kesamaan antar nama tempat ditentukan dengan menggunakan cosine similarity, selanjutnya dilakukan pengujian terhadap sistem rekomendasi yang menggunakan pendekatan content-based filtering recommendation.
 
