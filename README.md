@@ -115,9 +115,12 @@ Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami da
   Hasil visualisasi dan wawasan :
   1. Menampilkan informasi terkait tempat yang paling sering dirating
      <br>
+     
      dari hasil visualisasi hasil top 10 tempat-tempat berikut yang memiliki jumlah ulasan (rating) yang relatif tinggi :
-    - Pantai Marina dan Grand Maerakaca memiliki jumlah ulasan tertinggi, masing-masing sebanyak 33 ulasan.
-    - Tempat-tempat lainnya dengan jumlah ulasan signifikan (31 ulasan) termasuk :
+     <br>
+      - Pantai Marina dan Grand Maerakaca memiliki jumlah ulasan tertinggi, masing-masing sebanyak 33 ulasan.
+      - Tempat-tempat lainnya dengan jumlah ulasan signifikan (31 ulasan) termasuk :
+        
      * Tirto Argo Siwarak
      * Wisata Lereng Kelir
      * Kampoeng Rawa
@@ -126,16 +129,17 @@ Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami da
      * Umbul Sidomukti
      * Tugu Muda Semarang
      * Hutan Pinus Kayon
-    Wawasan dari hasil tersebut :
+    
+  Wawasan dari hasil tersebut :
     <br>
-    * Pantai Marina dan Grand Maerakaca:
+  * Pantai Marina dan Grand Maerakaca:
        <br>
-       - Kedua tempat ini berpotensi menjadi destinasi favorit wisatawan di wilayah tersebut, karena memiliki daya tarik khusus atau fasilitas yang sesuai dengan kebutuhan pengunjung.
-       - Daya tarik ini bisa berupa lokasi strategis, aksesibilitas, keindahan tempat, atau kegiatan yang ditawarkan.
+    - Kedua tempat ini berpotensi menjadi destinasi favorit wisatawan di wilayah tersebut, karena memiliki daya tarik khusus atau fasilitas yang sesuai dengan kebutuhan pengunjung.
+    - Daya tarik ini bisa berupa lokasi strategis, aksesibilitas, keindahan tempat, atau kegiatan yang ditawarkan.
     <br>
-    * Tempat dengan ulasan tinggi lainnya:
+  * Tempat dengan ulasan tinggi lainnya:
       <br>
-      - Tempat-tempat seperti Tirto Argo Siwarak, Wisata Lereng Kelir, dan lainnya menunjukkan bahwa ada persebaran minat yang cukup luas dari wisatawan di berbagai jenis destinasi, seperti wisata alam, sejarah, dan budaya.
+    - Tempat-tempat seperti Tirto Argo Siwarak, Wisata Lereng Kelir, dan lainnya menunjukkan bahwa ada persebaran minat yang cukup luas dari wisatawan di berbagai jenis destinasi, seperti wisata alam, sejarah, dan budaya.
       
 
   3. Menampilkan visualisasi data distribusi rating
