@@ -284,9 +284,9 @@ Tahapan pada Data Preparation :
 
 >## Modelling
 
-Pada tahap pengembangan model machine learning sistem rekomendasi, teknik content-based filtering recommendation dan collaborative filtering recommendation digunakan untuk memberikan rekomendasi tempat terbaik kepada pengguna berdasarkan rating atau penilaian yang telah mereka berikan pada tempat tersebut. Tujuannya adalah untuk memberikan hasil rekomendasi yang tepat sesuai dengan keinginan pengguna.
+Pada tahap pengembangan model machine learning sistem rekomendasi, teknik content-based filtering recommendation dan collaborative filtering recommendation digunakan untuk memberikan rekomendasi tempat terbaik kepada pengguna berdasarkan rating atau penilaian yang telah mereka berikan pada tempat tersebut. Tujuannya adalah untuk memberikan hasil rekomendasi yang tepat sesuai dengan keinginan pengguna. 
 
--1. Content-based Filtering Recommendation
+-1. Content-based Filtering Recommendation  menggunakan Cosine Similarity.
 Beberapa tahap yang dilakukan untuk membuat sistem rekomendasi dengan pendekatan content-based filtering adalah TF-IDF Vectorizer, cosine similarity, dan pengujian sistem rekomendasi.
 
 * TF-IDF Vectorizer
@@ -297,8 +297,18 @@ Beberapa tahap yang dilakukan untuk membuat sistem rekomendasi dengan pendekatan
   
 * Hasil Top-N Recommendation
   Setelah data tempat wisata dikonversi menjadi matriks dengan menggunakan TF-IDF Vectorizer, dan tingkat kesamaan antar nama tempat ditentukan dengan menggunakan cosine similarity, selanjutnya dilakukan pengujian terhadap sistem rekomendasi yang menggunakan pendekatan content-based filtering recommendation.
+<br>
+Hasil dari Top-N Recomendation :
 
--2. Collaborative Filtering Recommendation
+| Place_Name               | Category |
+|--------------------------|----------|
+| Candi Gedong Songo       | Budaya   |
+| Semarang Chinatown       | Budaya   |
+| Kampoeng Djadhoel Semarang | Budaya   |
+| Pura Giri Natha          | Budaya   |
+| Benteng Pendem           | Budaya   |
+
+-2. Collaborative Filtering Recommendation menggunakan RecomenderNet.
 Tahap-tahap yang dilakukan untuk membuat sistem rekomendasi dengan pendekatan collaborative filtering meliputi data preparation, pembagian data menjadi data latih dan data validasi, serta pembangunan model dan pengujian sistem rekomendasi.
 
 * Data Preparation
