@@ -99,16 +99,10 @@ Berikut adalah visualisasi dari dataset tourism_rating:
 
 >## Kondisi Data
 
-Tahap ini merupakan tahapan pembersihan data 
-1. Menghapus kolom yang tidak diperlukan yaitu kolom Unnamed: 11 dan Unnamed: 12
-2. Mengatasi missing values pada in package_tourism hasilnya bahwa tidak ada missing value pada dataset tersebut
-3. Mengecek duplikasi pada setiap dataset yaitu jumlah data places yang duplikat: 0 sedangkan jumlah data rating yang duplikat: 6
-4. Membuat kamus (dictionary) yang dapat digunakan untuk encoding dan decoding nilai-nilai dalam suatu kolom pada DataFrame
-5. Melakukan encoding kolom User_Id dan memetakan hasil encoding tersebut ke dalam DataFrame
-6. Melakukan encoding kolom Place_Id dan memetakan hasil encoding tersebut ke DataFrame
-7. Melihat gambaran data untuk pemodelan dengan tujuan untuk mendapatkan statistik dasar dari dataset, termasuk jumlah pengguna, jumlah tempat, dan rentang nilai rating
-8. Melakukan pengacakan urutan baris dalam DataFrame, dengan tujuan menghindari bias urutan data, meningkatkan generalisasi model, mempersiapkan data untuk split
-   
+Pada bagian kondisi data, bahwa pada dataset place yang terdiri dari kolom place_id, place_name, category, price, rating tidak terjadi missing value, sedangkan pada dataset rating yang terdiri dari kolom user_id, place_id, place_ratings tidak terjadi missing value. 
+
+Selanjutnya mengecek data duplikat pada setiap dataset yaitu jumlah data places yang duplikat: 0 sehingga dihasilkan tidak ada data duplikat sedangkan jumlah data rating terjadi data duplikat sebanyak 6 data. Setelah mengetahui terjadi data duplikat maka dilakukan proses penghapusan pada data duplikat.
+
 >## Exploratory Data Analysis (EDA)
 
 Tahap eksplorasi penting untuk memahami variabel-variabel pada data serta korelasi antar variabel. Pemahaman terhadap variabel pada data dan korelasinya akan membantu kita dalam menentukan pendekatan atau algoritma yang cocok untuk data kita. Idealnya, kita melakukan eksplorasi data terhadap seluruh variabel.
