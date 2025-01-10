@@ -112,7 +112,7 @@ Tahap eksplorasi penting untuk memahami variabel-variabel pada data serta korela
 
 Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami dataset secara baik dan detail.
 
-  Tahapan pada proses ini yaitu :
+  Hasil visualisasi dan wawasan :
   1. Menampilkan informasi terkait tempat yang paling sering dirating
      <br>
      dari hasil visualisasi hasil top 10 tempat-tempat berikut yang memiliki jumlah ulasan (rating) yang relatif tinggi :
@@ -127,23 +127,25 @@ Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami da
      * Tugu Muda Semarang
      * Hutan Pinus Kayon
     Wawasan dari hasil tersebut :
+    <br>
     * Pantai Marina dan Grand Maerakaca:
        <br>
        - Kedua tempat ini berpotensi menjadi destinasi favorit wisatawan di wilayah tersebut, karena memiliki daya tarik khusus atau fasilitas yang sesuai dengan kebutuhan pengunjung.
        - Daya tarik ini bisa berupa lokasi strategis, aksesibilitas, keindahan tempat, atau kegiatan yang ditawarkan.
+    <br>
     * Tempat dengan ulasan tinggi lainnya:
       <br>
       - Tempat-tempat seperti Tirto Argo Siwarak, Wisata Lereng Kelir, dan lainnya menunjukkan bahwa ada persebaran minat yang cukup luas dari wisatawan di berbagai jenis destinasi, seperti wisata alam, sejarah, dan budaya.
       
 
-  2. Menampilkan visualisasi data distribusi rating
-  3. Menampilkan visualisasi perbandingan jumlah kategori wisata di Kota Semarang
-  4. Menampilkan visualisasi distribusi usia pengunjung (user)
-  5. Membuat visualisasi distribusi harga masuk tempat wisata
-  6. Menggabungkan Harga dan Waktu_Menit untuk tujuan Kategori
-  7. Memfilter asal kota dari user
-  8. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom User_Id pada DataFrame user
-  9. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom Place_Id pada DataFrame rating
+  3. Menampilkan visualisasi data distribusi rating
+  4. Menampilkan visualisasi perbandingan jumlah kategori wisata di Kota Semarang
+  5. Menampilkan visualisasi distribusi usia pengunjung (user)
+  6. Membuat visualisasi distribusi harga masuk tempat wisata
+  7. Menggabungkan Harga dan Waktu_Menit untuk tujuan Kategori
+  8. Memfilter asal kota dari user
+  9. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom User_Id pada DataFrame user
+  10. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom Place_Id pada DataFrame rating
 
 Setelah melakukan Exploratory Data Analysis (EDA), kita memperoleh hasil:
 
