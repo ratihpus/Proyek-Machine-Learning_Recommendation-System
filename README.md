@@ -99,9 +99,12 @@ Berikut adalah visualisasi dari dataset tourism_rating:
 
 >## Kondisi Data
 
-Pada bagian kondisi data, bahwa pada dataset place yang terdiri dari kolom place_id, place_name, category, price, rating tidak terjadi missing value, sedangkan pada dataset rating yang terdiri dari kolom user_id, place_id, place_ratings tidak terjadi missing value. 
-
-Selanjutnya mengecek data duplikat pada setiap dataset yaitu jumlah data places yang duplikat: 0 sehingga dihasilkan tidak ada data duplikat sedangkan jumlah data rating terjadi data duplikat sebanyak 6 data. Setelah mengetahui terjadi data duplikat maka dilakukan proses penghapusan pada data duplikat.
+Pada bagian kondisi data:
+1. Pada dataset places yag terdiri dari kolom place_id, place_name, category, price, dan rating, tidak ditemukan missing value.
+2. Pada dataset ratings yang terdiri dari kolom user_id, place_id, dan place_ratings, tidak ditemukan missing value.
+3. Setelah melakukan pengecekan data duplikat, hasil analisis adalah :
+   - Dataset places : tidak ditemukan data duplikat.
+   - Dataset ratings : ditemukan 6 data duplikat.
 
 >## Exploratory Data Analysis (EDA)
 
@@ -111,6 +114,28 @@ Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami da
 
   Tahapan pada proses ini yaitu :
   1. Menampilkan informasi terkait tempat yang paling sering dirating
+     <br>
+     dari hasil visualisasi hasil top 10 tempat-tempat berikut yang memiliki jumlah ulasan (rating) yang relatif tinggi :
+    - Pantai Marina dan Grand Maerakaca memiliki jumlah ulasan tertinggi, masing-masing sebanyak 33 ulasan.
+    - Tempat-tempat lainnya dengan jumlah ulasan signifikan (31 ulasan) termasuk :
+     * Tirto Argo Siwarak
+     * Wisata Lereng Kelir
+     * Kampoeng Rawa
+     * Monumen Palagan Ambarawa
+     * La Kana Chapel
+     * Umbul Sidomukti
+     * Tugu Muda Semarang
+     * Hutan Pinus Kayon
+    Wawasan dari hasil tersebut :
+    * Pantai Marina dan Grand Maerakaca:
+       <br>
+       - Kedua tempat ini berpotensi menjadi destinasi favorit wisatawan di wilayah tersebut, karena memiliki daya tarik khusus atau fasilitas yang sesuai dengan kebutuhan pengunjung.
+       - Daya tarik ini bisa berupa lokasi strategis, aksesibilitas, keindahan tempat, atau kegiatan yang ditawarkan.
+    * Tempat dengan ulasan tinggi lainnya:
+      <br>
+      - Tempat-tempat seperti Tirto Argo Siwarak, Wisata Lereng Kelir, dan lainnya menunjukkan bahwa ada persebaran minat yang cukup luas dari wisatawan di berbagai jenis destinasi, seperti wisata alam, sejarah, dan budaya.
+      
+
   2. Menampilkan visualisasi data distribusi rating
   3. Menampilkan visualisasi perbandingan jumlah kategori wisata di Kota Semarang
   4. Menampilkan visualisasi distribusi usia pengunjung (user)
