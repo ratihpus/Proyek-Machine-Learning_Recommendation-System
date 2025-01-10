@@ -231,7 +231,7 @@ Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami da
       <br>
       Distribusi Pengguna: Setiap User_Id muncul satu kali, menunjukkan bahwa data ini bersifat unik untuk setiap pengguna.
      
-  10. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom Place_Id pada DataFrame rating
+  9. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom Place_Id pada DataFrame rating
       <br>
       - Lokasi dengan Rating Tertinggi:
         <br>
@@ -247,8 +247,9 @@ Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami da
 
 <br>
 * Semua (33) tempat yang paling sering dirating
+<br>
 * Semua (297) pengguna telah memberi peringkat minimal 1 kali
-  
+<br>
 Untuk merekomendasikan tempat wisata dengan preferensi teratas, kita dapat meminta setiap pengguna memberi peringkat terhadap semua tempat wisata. Namun tentunya hal tersebut sedikit sulit dicapai. Solusinya kita akan mencoba memprediksi peringkat yang akan diberikan pengguna terhadap tempat wisata.
 
 >## Data Preparation
