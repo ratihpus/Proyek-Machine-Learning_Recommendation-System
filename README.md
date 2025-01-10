@@ -219,7 +219,7 @@ Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami da
        * Wawasan: Tempat ibadah biasanya tidak memiliki biaya masuk, sehingga harga rata-rata adalah Rp 0. Namun, data waktu kunjungan tidak tercatat, yang bisa menjadi area untuk ditingkatkan dalam pengumpulan data.
        
   7. Memfilter asal kota dari user
-  <br>
+     <br>
      Hasil dari visualisasi menunjukkan bahwa jumlah asal kota dari pengguna (pengunjung) yaitu ;
      - Bekas (kota yang paling banyak)
      - Semarang
