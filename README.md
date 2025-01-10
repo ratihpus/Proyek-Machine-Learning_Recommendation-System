@@ -149,20 +149,103 @@ Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami da
      - Tempat Wisata dengan Rating Tertinggi:
          * Pantai Marina dan Grand Maerakaca terlihat memiliki jumlah rating terbanyak (33), mengindikasikan popularitasnya di kalangan pengunjung.
          * Tempat ini mungkin memiliki daya tarik yang lebih besar dibandingkan tempat lain, seperti fasilitas yang baik, keindahan alam, atau akses yang mudah.
+    <br>
     - Kelompok Tempat dengan Popularitas yang Serupa:
          * Terdapat beberapa tempat dengan jumlah rating yang hampir sama (31), seperti Tirto Argo Siwarak, Wisata Lereng Kelir, Kampoeng Rawa, Monumen Palagan Ambarawa, dan La Kana Chapel. Hal ini menunjukkan bahwa mereka memiliki daya tarik yang kompetitif satu sama lain.
 
+  3. Menampilkan visualisasi perbandingan jumlah kategori wisata di Kota Semarang
+     <br>
+     Hasil dan wawasan yang dapat diperoleh :
+     - Kategori Cagar Alam memiliki jumlah tempat wisata terbanyak dibandingkan kategori lainnya, dengan sekitar 20 lokasi.
+     - Kategori Taman Hiburan juga cukup dominan, berada di posisi kedua dengan jumlah lokasi yang sedikit lebih rendah dibandingkan Cagar Alam.
+     - Kategori Budaya berada di posisi ketiga, menunjukkan bahwa wisata berbasis budaya juga memiliki daya tarik yang signifikan.
+     - Kategori Bahari dan Tempat Ibadah memiliki jumlah tempat wisata paling sedikit dibandingkan kategori lainnya.
+    <br>
+    Wawasan :
+      - Dominasi Cagar Alam dan Taman Hiburan:
+        Kota Semarang tampaknya memiliki daya tarik wisata alam yang kuat, dengan fokus pada pelestarian lingkungan (Cagar Alam) dan hiburan keluarga (Taman Hiburan). Potensi wisata alam ini dapat diperkuat melalui promosi keberlanjutan dan pelibatan masyarakat lokal.
+      - Kesempatan untuk Kategori Bahari dan Tempat Ibadah:
+        Kategori Bahari dan Tempat Ibadah memiliki jumlah lokasi yang lebih sedikit, yang dapat menjadi peluang untuk eksplorasi lebih lanjut. Pemerintah atau pengelola wisata dapat mempertimbangkan pengembangan infrastruktur atau promosi wisata bahari, mengingat Semarang adalah kota pesisir.
+      - Wisata Budaya:
+        Wisata budaya memiliki potensi untuk menarik wisatawan lokal maupun internasional yang ingin mengeksplorasi sejarah dan tradisi kota Semarang. Meningkatkan program budaya atau event tahunan dapat memperkuat daya tarik wisata budaya.
+      - Strategi Pengembangan:
+        Penting untuk memahami kebutuhan dan preferensi wisatawan di setiap kategori. Misalnya, apakah wisatawan mencari pengalaman edukasi, rekreasi, atau spiritual. Mengintegrasikan kategori wisata (seperti taman hiburan di sekitar cagar alam atau acara budaya di tempat wisata bahari) bisa menjadi strategi untuk meningkatkan kunjungan wisata.
+        
+  4. Menampilkan visualisasi distribusi usia pengunjung (user)
+     <br>
+     berikut adalah analisis distribusi usia pengguna:
+     - Median Usia:
+       Median usia pengguna berada di sekitar 30 tahun, menunjukkan bahwa sebagian besar pengguna berusia mendekati angka tersebut.
+     - Rentang Usia:
+       Rentang usia pengguna terlihat berkisar antara 20 tahun (minimum) hingga 40 tahun (maksimum).
+     - Interquartile Range (IQR):
+       Sebagian besar data usia pengguna berada dalam rentang 25 hingga 35 tahun, yang merupakan kuartil pertama (Q1) hingga kuartil ketiga (Q3). Ini menunjukkan bahwa mayoritas pengguna berada dalam usia produktif.
+       
+  5. Membuat visualisasi distribusi harga masuk tempat wisata
+     <br>
+     Dari hasil visualisasi menunjukkan bahwa harga masuk wisata di Kota Semarang dari harga 0 (gratis) sampai kurang dari 50.000
+     
+  6. Menggabungkan Harga dan Waktu_Menit untuk tujuan Kategori.
+     <br>
+     berikut adalah analisis data mengenai harga (Price) dan waktu kunjungan (Time_Minutes) berdasarkan kategori tempat wisata:
+     - Kategori Bahari :
+       * Harga rata-rata: Rp 4.000
+       * Total harga: Rp 16.000
+       * Waktu kunjungan rata-rata: 90 menit
+       * Total waktu kunjungan: 90 menit
+       * Wawasan: Bahari memiliki rata-rata harga yang paling rendah dibandingkan kategori lainnya. Namun, waktu kunjungan rata-rata cukup lama, menunjukkan wisatawan cenderung menikmati aktivitas yang lebih santai di lokasi ini.
+     - Kategori Budaya:
+       * Harga rata-rata: Rp 13.166
+       * Total harga: Rp 197.500
+       * Waktu kunjungan rata-rata: 60,63 menit
+       * Total waktu kunjungan: 485 menit
+       * Wawasan: Wisata budaya memiliki harga rata-rata yang menengah. Waktu kunjungan rata-rata lebih pendek, mengindikasikan kegiatan mungkin lebih fokus pada eksplorasi situs budaya tertentu.
+     - Kategori Cagar Alam:
+       * Harga rata-rata: Rp 12.025
+       * Total harga: Rp 240.500
+       * Waktu kunjungan rata-rata: 61,88 menit
+       * Total waktu kunjungan: 495 menit
+       * Wawasan: Cagar alam memiliki harga rata-rata yang mirip dengan kategori budaya, dengan waktu kunjungan yang sedikit lebih lama. Hal ini menunjukkan daya tarik berupa aktivitas alam yang memakan waktu tetapi tetap terjangkau.
+     - Kategori Taman Hiburan:
+       * Harga rata-rata: Rp 34.400
+       * Total harga: Rp 516.000
+       * Waktu kunjungan rata-rata: 81,82 menit
+       * Total waktu kunjungan: 900 menit
+       * Wawasan: Taman hiburan memiliki harga rata-rata yang paling tinggi. Waktu kunjungan rata-rata juga cukup lama, menunjukkan bahwa wisatawan menghabiskan waktu lebih banyak untuk menikmati fasilitas dan aktivitas di lokasi ini.
+     - Kategori Tempat Ibadah:
+       * Harga rata-rata: Rp 0
+       * Total harga: Rp 0
+       * Waktu kunjungan rata-rata: Tidak ada data
+       * Wawasan: Tempat ibadah biasanya tidak memiliki biaya masuk, sehingga harga rata-rata adalah Rp 0. Namun, data waktu kunjungan tidak tercatat, yang bisa menjadi area untuk ditingkatkan dalam pengumpulan data.
+       
+  7. Memfilter asal kota dari user
+  <br>
+     Hasil dari visualisasi menunjukkan bahwa jumlah asal kota dari pengguna (pengunjung) yaitu ;
+     - Bekas (kota yang paling banyak)
+     - Semarang
+     - Yogyakarta
+     - Lampung
+     - Bogor
+       
+  8. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom User_Id pada DataFrame user
+      <br>
+      Distribusi Pengguna: Setiap User_Id muncul satu kali, menunjukkan bahwa data ini bersifat unik untuk setiap pengguna.
+     
+  10. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom Place_Id pada DataFrame rating
+      <br>
+      - Lokasi dengan Rating Tertinggi:
+        <br>
+        Place_Id 344 dan 336 memiliki jumlah rating tertinggi, yaitu 33 rating. Setelah melakukan Exploratory Data Analysis (EDA), kita memperoleh hasil:
+      - Distribusi Rating:
+        <br>
+        Lokasi dengan Place_Id 366, 367, 368, 369, dan 377 memiliki jumlah rating yang sama, yaitu 31 rating, menempatkannya pada posisi berikutnya setelah Place_Id 344 dan 336.
+      - Jumlah Lokasi Berdasarkan Kategori Rating:
+        <br>
+        * Lokasi dengan jumlah rating tinggi (≥30 rating): Ada 7 lokasi.
+        * Lokasi dengan jumlah rating menengah (20–29 rating): Mayoritas tempat berada di kategori ini.
+        * Lokasi dengan jumlah rating rendah (<20 rating): Beberapa lokasi memiliki popularitas yang relatif rendah.
 
-  5. Menampilkan visualisasi perbandingan jumlah kategori wisata di Kota Semarang
-  6. Menampilkan visualisasi distribusi usia pengunjung (user)
-  7. Membuat visualisasi distribusi harga masuk tempat wisata
-  8. Menggabungkan Harga dan Waktu_Menit untuk tujuan Kategori
-  9. Memfilter asal kota dari user
-  10. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom User_Id pada DataFrame user
-  11. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom Place_Id pada DataFrame rating
-
-Setelah melakukan Exploratory Data Analysis (EDA), kita memperoleh hasil:
-
+<br>
 * Semua (33) tempat yang paling sering dirating
 * Semua (297) pengguna telah memberi peringkat minimal 1 kali
   
