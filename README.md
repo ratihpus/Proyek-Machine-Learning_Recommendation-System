@@ -76,15 +76,24 @@ Pada tourism_with_id terdiri dari 437 baris dan 10 kolom sebagai berikut:
 - Long: kolom yang menunjukkan longitude dari setiap tempat wisata.
 
 Berikut adalah visualisasi dari dataset tourism_with_id:
-<p align="center">
-  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/sampel_dataplace.PNG?raw=true"/>  
-</p>
+| Place_Id | Place_Name       | Description                                       | Category | City     | Price | Rating | Time_Minutes | Coordinate                           | Lat        | Long       | Unnamed: 11 | Unnamed: 12 |
+|----------|------------------|---------------------------------------------------|----------|----------|-------|--------|--------------|---------------------------------------|------------|------------|-------------|-------------|
+| 1        | Monumen Nasional | Monumen Nasional atau yang populer disingkat d... | Budaya   | Jakarta  | 20000 | 4.6    | 15.0         | {'lat': -6.1753924, 'lng': 106.8271528} | -6.175392  | 106.827153 | NaN         | 1           |
+| 2        | Kota Tua         | Kota tua di Jakarta, yang juga bernama Kota Tu... | Budaya   | Jakarta  | 0     | 4.6    | 90.0         | {'lat': -6.137644799999999, 'lng': 106.8171245} | -6.137645  | 106.817125 | NaN         | 2           |
+
 
 ### Rating
   <br> Informasi Dataset tourism_rating
-  <p align="center">
-  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/sampel_dataplace.PNG?raw=true"/>  
-  </p>
+
+ | Place_Id | Place_Name           | Description                                                                                   | Category      | City       | Price | Rating |
+|----------|----------------------|-----------------------------------------------------------------------------------------------|---------------|------------|-------|--------|
+| 335      | Candi Gedong Songo   | Candi Gedong Songo (bahasa Jawa: ꦕꦤ꧀ꦝꦶ​ꦒꦼꦝꦺꦴꦁ​...)                                         | Budaya        | Semarang   | 10000 | 4.5    |
+| 336      | Grand Maerakaca      | Masyarakat Jawa Tengah mungkin sudah tidak asing...                                           | Taman Hiburan | Semarang   | 15000 | 4.4    |
+| 337      | Kampung Pelangi      | Kampung pelangi atau dalam bahasa Inggris disebut...                                          | Taman Hiburan | Semarang   | 3000  | 4.3    |
+| 338      | Lawang Sewu          | Lawang Sewu ("Seribu Pintu") (bahasa Jawa: ꦭꦮꦁ...)                                            | Budaya        | Semarang   | 10000 | 4.6    |
+| 339      | Sam Poo Kong Temple  | Sam Poo Kong (Hanzi: ; Pinyin: Sānbǎo Dòng), juga...                                          | Budaya        | Semarang   | 35000 | 4.5    |
+
+
 tourism_rating terdiri dari 10000 baris dan 3 kolom sebagai berikut: 
 
 <br> - User_Id: identitas unik dari setiap pengguna.
