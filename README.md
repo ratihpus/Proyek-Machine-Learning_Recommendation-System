@@ -121,14 +121,14 @@ Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami da
       - Pantai Marina dan Grand Maerakaca memiliki jumlah ulasan tertinggi, masing-masing sebanyak 33 ulasan.
       - Tempat-tempat lainnya dengan jumlah ulasan signifikan (31 ulasan) termasuk :
         
-     * Tirto Argo Siwarak
-     * Wisata Lereng Kelir
-     * Kampoeng Rawa
-     * Monumen Palagan Ambarawa
-     * La Kana Chapel
-     * Umbul Sidomukti
-     * Tugu Muda Semarang
-     * Hutan Pinus Kayon
+         * Tirto Argo Siwarak
+         * Wisata Lereng Kelir
+         * Kampoeng Rawa
+         * Monumen Palagan Ambarawa
+         * La Kana Chapel
+         * Umbul Sidomukti
+         * Tugu Muda Semarang
+         * Hutan Pinus Kayon
     
   Wawasan dari hasil tersebut :
     <br>
