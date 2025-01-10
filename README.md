@@ -287,6 +287,7 @@ Tahapan pada Data Preparation :
 Pada tahap pengembangan model machine learning sistem rekomendasi, teknik content-based filtering recommendation dan collaborative filtering recommendation digunakan untuk memberikan rekomendasi tempat terbaik kepada pengguna berdasarkan rating atau penilaian yang telah mereka berikan pada tempat tersebut. Tujuannya adalah untuk memberikan hasil rekomendasi yang tepat sesuai dengan keinginan pengguna. 
 
 -1. Content-based Filtering Recommendation  menggunakan Cosine Similarity.
+<br>
 Beberapa tahap yang dilakukan untuk membuat sistem rekomendasi dengan pendekatan content-based filtering adalah TF-IDF Vectorizer, cosine similarity, dan pengujian sistem rekomendasi.
 
 * TF-IDF Vectorizer
@@ -308,7 +309,10 @@ Hasil dari Top-N Recomendation :
 | Pura Giri Natha          | Budaya   |
 | Benteng Pendem           | Budaya   |
 
+Berdasarkan hasil rekomendasi di atas, dapat dilihat bahwa sistem yang dibuat berhasil memberikan rekomendasi tempat berdasarkan sebuah tempat, yaitu 'Tugu Muda Semarang' dan dihasilkan rekomendasi tempat dengan kategori yang sama, yaitu budaya.
+
 -2. Collaborative Filtering Recommendation menggunakan RecomenderNet.
+<br>
 Tahap-tahap yang dilakukan untuk membuat sistem rekomendasi dengan pendekatan collaborative filtering meliputi data preparation, pembagian data menjadi data latih dan data validasi, serta pembangunan model dan pengujian sistem rekomendasi.
 
 * Data Preparation
