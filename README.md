@@ -142,14 +142,24 @@ Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami da
     - Tempat-tempat seperti Tirto Argo Siwarak, Wisata Lereng Kelir, dan lainnya menunjukkan bahwa ada persebaran minat yang cukup luas dari wisatawan di berbagai jenis destinasi, seperti wisata alam, sejarah, dan budaya.
       
 
-  3. Menampilkan visualisasi data distribusi rating
-  4. Menampilkan visualisasi perbandingan jumlah kategori wisata di Kota Semarang
-  5. Menampilkan visualisasi distribusi usia pengunjung (user)
-  6. Membuat visualisasi distribusi harga masuk tempat wisata
-  7. Menggabungkan Harga dan Waktu_Menit untuk tujuan Kategori
-  8. Memfilter asal kota dari user
-  9. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom User_Id pada DataFrame user
-  10. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom Place_Id pada DataFrame rating
+  2. Menampilkan visualisasi data distribusi rating
+     <br>
+     Dari visualisasi tersebut, berikut adalah beberapa wawasan berdasarkan grafik:
+     <br>
+     - Tempat Wisata dengan Rating Tertinggi:
+         * Pantai Marina dan Grand Maerakaca terlihat memiliki jumlah rating terbanyak (33), mengindikasikan popularitasnya di kalangan pengunjung.
+         * Tempat ini mungkin memiliki daya tarik yang lebih besar dibandingkan tempat lain, seperti fasilitas yang baik, keindahan alam, atau akses yang mudah.
+    - Kelompok Tempat dengan Popularitas yang Serupa:
+         * Terdapat beberapa tempat dengan jumlah rating yang hampir sama (31), seperti Tirto Argo Siwarak, Wisata Lereng Kelir, Kampoeng Rawa, Monumen Palagan Ambarawa, dan La Kana Chapel. Hal ini menunjukkan bahwa mereka memiliki daya tarik yang kompetitif satu sama lain.
+
+
+  5. Menampilkan visualisasi perbandingan jumlah kategori wisata di Kota Semarang
+  6. Menampilkan visualisasi distribusi usia pengunjung (user)
+  7. Membuat visualisasi distribusi harga masuk tempat wisata
+  8. Menggabungkan Harga dan Waktu_Menit untuk tujuan Kategori
+  9. Memfilter asal kota dari user
+  10. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom User_Id pada DataFrame user
+  11. Menghitung frekuensi kemunculan setiap nilai unik dalam kolom Place_Id pada DataFrame rating
 
 Setelah melakukan Exploratory Data Analysis (EDA), kita memperoleh hasil:
 
