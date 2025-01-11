@@ -86,15 +86,7 @@ Berikut adalah visualisasi dari dataset tourism_with_id:
 
 ### Rating
   <br> Informasi Dataset tourism_rating
-
- | User_Id | Place_Id | Place_Ratings |
-|---------|----------|---------------|
-| 5       | 335      | 3             |
-| 20      | 335      | 4             |
-| 41      | 335      | 5             |
-| 55      | 335      | 2             |
-| 70      | 335      | 3             |
-
+<br>
 tourism_rating terdiri dari 1317 baris dan 3 kolom sebagai berikut: 
 
 <br> - User_Id: identitas unik dari setiap pengguna.
@@ -103,9 +95,13 @@ tourism_rating terdiri dari 1317 baris dan 3 kolom sebagai berikut:
 
 Berikut adalah visualisasi dari dataset tourism_rating:
   
-   <p align="center">
-  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/datarating_info.PNG?raw=true"/>  
-  </p>
+| User_Id | Place_Id | Place_Ratings |
+|---------|----------|---------------|
+| 5       | 335      | 3             |
+| 20      | 335      | 4             |
+| 41      | 335      | 5             |
+| 55      | 335      | 2             |
+| 70      | 335      | 3             |
 
 >## Kondisi Data
 
