@@ -88,7 +88,6 @@ Berikut adalah visualisasi dari dataset tourism_with_id:
   <br> Informasi Dataset tourism_rating
 <br>
 tourism_rating terdiri dari 1317 baris dan 3 kolom sebagai berikut: 
-
 <br> - User_Id: identitas unik dari setiap pengguna.
 <br> - Place_Id: identitas unik dari setiap tempat wisata.
 <br> - Place_Ratings: penilaian atau rating yang diberikan oleh pengguna terhadap tempat wisata tertentu.
