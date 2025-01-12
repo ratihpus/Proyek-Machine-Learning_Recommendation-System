@@ -335,8 +335,6 @@ Cara Kerja:
   <br>
   * Formula cosine similarity adalah :
   <br>
-  $$\text{Cosine Similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|}$$
-  <br>
   di mana 𝐴⋅𝐵 adalah hasil perkalian titik antara dua vektor,dan ∥𝐴∥ dan ∥𝐵∥ adalah norma (magnitude) dari masing-masing vektor.
   <br>
   <br>
@@ -358,6 +356,13 @@ Hasil dari Top-N Recomendation :
 Berdasarkan hasil rekomendasi di atas, dapat dilihat bahwa sistem yang dibuat berhasil memberikan rekomendasi tempat berdasarkan sebuah tempat, yaitu 'Tugu Muda Semarang' dan dihasilkan rekomendasi tempat dengan kategori yang sama, yaitu budaya.
 
 -2. Collaborative Filtering Recommendation menggunakan RecomenderNet.
+<br>
+RecomenderNet adalah sistem rekomendasi berbasis pembelajaran mendalam (deep learning). Ini seringkali melibatkan jaringan saraf tiruan yang dilatih untuk memprediksi preferensi pengguna atau item berdasarkan interaksi sebelumnya atau data lainnya. RecomenderNet berfokus pada mempelajari representasi vektor untuk pengguna dan item yang kemudian digunakan untuk menghasilkan rekomendasi.
+<br>
+Cara Kerja:
+* Input: Sistem ini biasanya membutuhkan data interaksi antara pengguna dan item, misalnya rating, klik, pembelian, atau preferensi lainnya.
+* Model Neural Network: RecomenderNet menggunakan arsitektur jaringan saraf untuk mempelajari fitur-fitur laten baik dari pengguna maupun item. Model ini dapat melibatkan lapisan embedding untuk mewakili item dan pengguna dalam ruang vektor yang lebih rendah.
+* Prediksi: Sistem kemudian melakukan prediksi dengan menggunakan output jaringan saraf (biasanya berupa skor atau probabilitas) yang menggambarkan tingkat ketertarikan pengguna terhadap item tertentu.
 <br>
 Tahap-tahap yang dilakukan untuk membuat sistem rekomendasi dengan pendekatan collaborative filtering meliputi data preparation, pembagian data menjadi data latih dan data validasi, serta pembangunan model dan pengujian sistem rekomendasi.
 
