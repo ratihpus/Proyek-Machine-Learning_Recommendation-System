@@ -326,7 +326,7 @@ Sistem rekomendasi adalah sistem yang digunakan untuk memberikan rekomendasi pro
 
 1. Cosine Similarity
 <br>
-* Cosine similarity
+Cosine similarity
   <br>
   adalah metode pengukuran kemiripan antara dua vektor dalam ruang berdimensi tinggi. Dalam konteks sistem rekomendasi, vektor biasanya mewakili representasi pengguna atau item dalam bentuk matriks (misalnya, matriks pengguna-item). Cosine similarity mengukur seberapa mirip dua vektor berdasarkan sudut antara mereka. Jika sudutnya kecil, maka kemiripannya tinggi, dan jika sudutnya besar, kemiripannya rendah.
 
@@ -342,7 +342,7 @@ Cara Kerja:
   <br>
   Cosine similarity digunakan untuk menghitung tingkat kesamaan antara dua data place dengan mengukur sudut antara kedua data tersebut. Teknik ini menghitung tingkat kesamaan dengan menggunakan sudut antara data place yang dianalisis. Hasil perhitungan ini akan memberikan nilai yang menunjukkan tingkat kesamaan antara dua data place, dimana nilai yang mendekati 1 menunjukkan tingkat kesamaan yang tinggi, dan nilai yang mendekati 0 menunjukkan tingkat kesamaan yang rendah.
   
-* Hasil Top-N Recommendation
+Hasil Top-N Recommendation
   Setelah data tempat wisata dikonversi menjadi matriks dengan menggunakan TF-IDF Vectorizer, dan tingkat kesamaan antar nama tempat ditentukan dengan menggunakan cosine similarity, selanjutnya dilakukan pengujian terhadap sistem rekomendasi yang menggunakan pendekatan content-based filtering recommendation.
 <br>
 Hasil dari Top-N Recomendation :
