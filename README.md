@@ -91,13 +91,16 @@ Berikut adalah visualisasi dari dataset tourism_with_id:
 | 5           | Lampung, Sumatera Selatan    | 20      |
 
 <br>
-  Pada data user terdiri dari tiga kolom: User_Id, Location, dan Age.
+  Pada data user terdiri 297 jumlah pengguna atau entri data dan terdiri dari tiga kolom: User_Id, Location, dan Age.
   <br>
   - User_Id:
+  <br>
   Merupakan ID unik untuk setiap pengguna. Angka ini bersifat incremental atau acak untuk membedakan satu pengguna dengan pengguna lainnya.
   - Location:
+  <br>
   Menunjukkan lokasi pengguna, termasuk nama kota dan provinsi. Dalam data ini terlihat pengguna berasal dari kota-kota seperti Semarang, Bekasi, Cirebon, dan Lampung.
   - Age: 
+  <br>
   Menyediakan informasi tentang usia pengguna. Dalam contoh ini, usia berkisar antara 20 hingga 23 tahun, yang menunjukkan kelompok usia muda atau awal dewasa.
   
 ### Rating
