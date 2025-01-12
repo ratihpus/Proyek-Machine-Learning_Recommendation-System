@@ -36,9 +36,6 @@ Untuk menyelesaikan masalah yang telah disebutkan pada bagian `Problem Statement
 - `Collaborative Filtering Recommedation`: Sistem merekomendasikan sejumlah destinasi wisata berdasarkan rating yang telah diberikan sebelumnya. Dari data rating pengguna, kita akan mengidentifikasi destinasi wisata yang mirip dan belum pernah dikunjungi oleh pengguna untuk direkomendasikan. Teknik ini menggunakan model based collaborative filtering : SVD (Singular Value Decomposition)
 
 >## Data Understanding
-<p align="center">
-  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/eef2ec7907eeb1a2b693eef3bdac21adfe579277/img/datasetinfo.PNG?raw=true"/>  
-</p>
 
 Dataset ini digunakan untuk keperluan studi/pendidikan dimana diharapkan dapat menghasilkan daftar restoran teratas sesuai dengan preferensi konsumen dan menemukan fitur signifikan. 
 
@@ -55,9 +52,6 @@ Berikut adalah Exploratory Data Analysis (EDA) yang merupakan proses investigasi
 
 ### Place 
   <br> Informasi Dataset tourism_with_id
-  <p align="center">
-  <img src="https://github.com/ratihpus/Proyek-Machine-Learning_Recommendation-System/blob/main/img/dataplace_info.PNG?raw=true"/>  
-  </p>
   
 Jumlah data pada dataset tersebut yaitu jumlah place sebanyak 437 sedangkan jumlah rating sebanyak 10000. 
 
