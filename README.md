@@ -335,9 +335,10 @@ Cara Kerja:
   <br>
   * Formula cosine similarity adalah :
   <br>
-  $$\text{Cosine Similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|}$$
+  $\text{Cosine Similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|}$
   <br>
   di mana 𝐴⋅𝐵 adalah hasil perkalian titik antara dua vektor,dan ∥𝐴∥ dan ∥𝐵∥ adalah norma (magnitude) dari masing-masing vektor.
+  <br>
   <br>
   Cosine similarity digunakan untuk menghitung tingkat kesamaan antara dua data place dengan mengukur sudut antara kedua data tersebut. Teknik ini menghitung tingkat kesamaan dengan menggunakan sudut antara data place yang dianalisis. Hasil perhitungan ini akan memberikan nilai yang menunjukkan tingkat kesamaan antara dua data place, dimana nilai yang mendekati 1 menunjukkan tingkat kesamaan yang tinggi, dan nilai yang mendekati 0 menunjukkan tingkat kesamaan yang rendah.
   
