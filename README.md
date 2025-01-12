@@ -333,9 +333,9 @@ Sistem rekomendasi adalah sistem yang digunakan untuk memberikan rekomendasi pro
 <br>
 Cara Kerja:
   <br>
-  * Misalkan kita memiliki dua vektor, 𝐴  dan 𝐵 yang mewakili dua item atau dua pengguna.
+  - Misalkan kita memiliki dua vektor, 𝐴  dan 𝐵 yang mewakili dua item atau dua pengguna.
   <br>
-  * Formula cosine similarity adalah :
+  - Formula cosine similarity adalah :
   <br>
   di mana 𝐴⋅𝐵 adalah hasil perkalian titik antara dua vektor,dan ∥𝐴∥ dan ∥𝐵∥ adalah norma (magnitude) dari masing-masing vektor.
   <br>
