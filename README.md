@@ -335,7 +335,7 @@ Cara Kerja:
   <br>
   * Formula cosine similarity adalah :
   <br>
-  $\text{Cosine Similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|}$
+  $$\text{Cosine Similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|}$$
   <br>
   di mana 𝐴⋅𝐵 adalah hasil perkalian titik antara dua vektor,dan ∥𝐴∥ dan ∥𝐵∥ adalah norma (magnitude) dari masing-masing vektor.
   <br>
