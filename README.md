@@ -51,7 +51,7 @@ Pada proyek ini, kita hanya akan menggunakan file `tourism_with_id.csv` dan `tou
 Berikut adalah Exploratory Data Analysis (EDA) yang merupakan proses investigasi awal pada data untuk menganalisis karakteristik, menemukan pola, anomali, dan memeriksa asumsi pada data.
 
 ### Place 
-  <br> Informasi Dataset tourism_with_id
+  <br> Informasi Dataset tourism_with_id.csv
   
 Jumlah data pada dataset tersebut yaitu jumlah place sebanyak 437 sedangkan jumlah rating sebanyak 10000. 
 
@@ -78,8 +78,30 @@ Berikut adalah visualisasi dari dataset tourism_with_id:
 | 338      | Lawang Sewu       | Lawang Sewu ("Seribu Pintu") (bahasa Jawa: ꦭꦮꦁ...)                                                                                                                        | Budaya      | Semarang | 10000 | 4.6    | NaN          | {'lat': -6.9839099, 'lng': 110.4104342}             | -6.983910  | 110.410434 |
 | 339      | Sam Poo Kong Temple| Sam Poo Kong (Hanzi: ; Pinyin: Sānbǎo Dòng), j...                                                                                                                          | Budaya      | Semarang | 35000 | 4.5    | NaN          | {'lat': -6.996236599999999, 'lng': 110.398122}      | -6.996237  | 110.398122 |
 
+### User 
+  <br> Informasi Dataset user.csv
+  Tahapan ini meliputi melihat gambaran data user, merubah data user agar hanya berisi user yang pernah megunjungi wisata di Kota Semarang, melihat dataset user yang pernah memberi rating pada wisata di Kota Semarang.
+  <br>
+  | **User_Id** | **Location**                 | **Age** |
+|-------------|------------------------------|---------|
+| 1           | Semarang, Jawa Tengah        | 20      |
+| 2           | Bekasi, Jawa Barat           | 21      |
+| 3           | Cirebon, Jawa Barat          | 23      |
+| 4           | Bekasi, Jawa Barat           | 21      |
+| 5           | Lampung, Sumatera Selatan    | 20      |
+
+<br>
+  Pada data user terdiri dari tiga kolom: User_Id, Location, dan Age.
+  <br>
+  - User_Id:
+  Merupakan ID unik untuk setiap pengguna. Angka ini bersifat incremental atau acak untuk membedakan satu pengguna dengan pengguna lainnya.
+  - Location:
+  Menunjukkan lokasi pengguna, termasuk nama kota dan provinsi. Dalam data ini terlihat pengguna berasal dari kota-kota seperti Semarang, Bekasi, Cirebon, dan Lampung.
+  - Age: 
+  Menyediakan informasi tentang usia pengguna. Dalam contoh ini, usia berkisar antara 20 hingga 23 tahun, yang menunjukkan kelompok usia muda atau awal dewasa.
+  
 ### Rating
-  <br> Informasi Dataset tourism_rating
+  <br> Informasi Dataset tourism_rating.csv
 <br>
 tourism_rating terdiri dari 1317 baris dan 3 kolom sebagai berikut: 
 <br> - User_Id: identitas unik dari setiap pengguna.
