@@ -96,9 +96,11 @@ Berikut adalah visualisasi dari dataset tourism_with_id:
   - User_Id:
   <br>
   Merupakan ID unik untuk setiap pengguna. Angka ini bersifat incremental atau acak untuk membedakan satu pengguna dengan pengguna lainnya.
+  <br>
   - Location:
   <br>
   Menunjukkan lokasi pengguna, termasuk nama kota dan provinsi. Dalam data ini terlihat pengguna berasal dari kota-kota seperti Semarang, Bekasi, Cirebon, dan Lampung.
+  <br>
   - Age: 
   <br>
   Menyediakan informasi tentang usia pengguna. Dalam contoh ini, usia berkisar antara 20 hingga 23 tahun, yang menunjukkan kelompok usia muda atau awal dewasa.
