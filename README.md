@@ -326,7 +326,9 @@ Sistem rekomendasi adalah sistem yang digunakan untuk memberikan rekomendasi pro
 
 1. Cosine Similarity
 <br>
-Definisi: Cosine similarity adalah metode pengukuran kemiripan antara dua vektor dalam ruang berdimensi tinggi. Dalam konteks sistem rekomendasi, vektor biasanya mewakili representasi pengguna atau item dalam bentuk matriks (misalnya, matriks pengguna-item). Cosine similarity mengukur seberapa mirip dua vektor berdasarkan sudut antara mereka. Jika sudutnya kecil, maka kemiripannya tinggi, dan jika sudutnya besar, kemiripannya rendah.
+* Cosine similarity
+  <br>
+  adalah metode pengukuran kemiripan antara dua vektor dalam ruang berdimensi tinggi. Dalam konteks sistem rekomendasi, vektor biasanya mewakili representasi pengguna atau item dalam bentuk matriks (misalnya, matriks pengguna-item). Cosine similarity mengukur seberapa mirip dua vektor berdasarkan sudut antara mereka. Jika sudutnya kecil, maka kemiripannya tinggi, dan jika sudutnya besar, kemiripannya rendah.
 
 <br>
 Cara Kerja:
