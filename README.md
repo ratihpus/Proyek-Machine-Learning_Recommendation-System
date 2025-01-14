@@ -279,6 +279,9 @@ Exploratory Data Analysis (EDA) memiliki peranan penting untuk dapat memahami da
 Untuk merekomendasikan tempat wisata dengan preferensi teratas, kita dapat meminta setiap pengguna memberi peringkat terhadap semua tempat wisata. Namun tentunya hal tersebut sedikit sulit dicapai. Solusinya kita akan mencoba memprediksi peringkat yang akan diberikan pengguna terhadap tempat wisata.
 
 >## Data Preparation
+
+Tahap data preparation dilakukan dengan proses encoding fitur User_Id pada dataset ratings dan fitur Place_Id pada dataset ratings menjadi sebuah array. Lalu hasil encoding tersebut akan dilakukan pemetaan atau mapping fitur yang telah dilakukan encoding tersebut ke dalam dataset ratings. Berdasarkan hasil encoding dan mapping tersebut, diperoleh jumlah user sebesar 297, jumlah tempat sebesar 57, nilai rating minimal sebesar 1.0, dan nilai rating maksimal yaitu 5.0
+<br>
 Tahap ini bertujuan untuk mempersiapkan data yang akan digunakan untuk proses training model. Di sini dilakukan dengan langkah berikut :
 
 - Menghapus kolom yang tidak diperlukan 
@@ -298,6 +301,11 @@ Tahap ini bertujuan untuk mempersiapkan data yang akan digunakan untuk proses tr
 - Melakukan encoding kolom Place_id dan memetakan hasil encoding tersebut ke DataFrame.
 
 - Melakukan pengacakan urutan baris dalam DataFrame, dengan tujuan menghindari bias urutan data, meningkatkan generalisasi model, mempersiapkan data untuk split.
+
+- Membagi Data Latih dan Data Validasi
+  <br>
+  Tahap pembagian dataset diawali dengan mengacak dataset ratings, kemudian melakukan pembagian menjadi data latih dan data validasi, yaitu dengan rasio data latih banding data validasi sebesar 80:20.
+
   
 Tahapan pada Data Preparation :
   1. Filter data : proses untuk menyaring subset data dari DataFrame berdasarkan suatu kondisi atau kriteria tertentu. Proses ini berguna untuk memfokuskan analisis pada data yang relevan atau memenuhi syarat tertentu.
@@ -307,6 +315,8 @@ Tahapan pada Data Preparation :
   5. Collaborative Filtering Preparation : teknik rekomendasi yang memanfaatkan interaksi pengguna dengan item (misalnya, rating yang diberikan pengguna terhadap produk atau tempat).
      Encode label : encoding label berarti mengubah kategori atau string menjadi angka yang dapat digunakan oleh model. 
      Split data : data harus dibagi menjadi training set dan test set. Umumnya, 80% data digunakan untuk pelatihan, dan 20% sisanya untuk pengujian.
+
+
 
 >## Modelling
 
@@ -362,15 +372,6 @@ Cara Kerja:
 * Model Neural Network: RecomenderNet menggunakan arsitektur jaringan saraf untuk mempelajari fitur-fitur laten baik dari pengguna maupun item. Model ini dapat melibatkan lapisan embedding untuk mewakili item dan pengguna dalam ruang vektor yang lebih rendah.
 * Prediksi: Sistem kemudian melakukan prediksi dengan menggunakan output jaringan saraf (biasanya berupa skor atau probabilitas) yang menggambarkan tingkat ketertarikan pengguna terhadap item tertentu.
 <br>
-Tahap-tahap yang dilakukan untuk membuat sistem rekomendasi dengan pendekatan collaborative filtering meliputi data preparation, pembagian data menjadi data latih dan data validasi, serta pembangunan model dan pengujian sistem rekomendasi.
-
-* Data Preparation
-
-Tahap data preparation dilakukan dengan proses encoding fitur User_Id pada dataset ratings dan fitur Place_Id pada dataset ratings menjadi sebuah array. Lalu hasil encoding tersebut akan dilakukan pemetaan atau mapping fitur yang telah dilakukan encoding tersebut ke dalam dataset ratings. Berdasarkan hasil encoding dan mapping tersebut, diperoleh jumlah user sebesar 297, jumlah tempat sebesar 57, nilai rating minimal sebesar 1.0, dan nilai rating maksimal yaitu 5.0
-
-* Membagi Data Latih dan Data Validasi
-
-Tahap pembagian dataset diawali dengan mengacak dataset ratings, kemudian melakukan pembagian menjadi data latih dan data validasi, yaitu dengan rasio data latih banding data validasi sebesar 80:20.
 
 * Model Development dan Hasil Rekomendasi
 
